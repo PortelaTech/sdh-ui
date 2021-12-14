@@ -17,15 +17,15 @@ This will create an Amplify application for you which will allow AWS Amplify to 
 Before proceeding, please get necessary parameters as outlined in [README](../README.md):
 
 ```
-<REGION>
-<REACT_APP_API_KEY>
-<REACT_APP_CLIENT_ID>
-<REACT_APP_FHIR_SERVER_URL>
+REACT_APP_FHIR_SERVER_URL=https://h9azbbark2.execute-api.ap-southeast-2.amazonaws.com/dev
+REACT_APP_AUTH_URL=https://33k0ggv7odoroau0ht7h6e5s70.auth.ap-southeast-2.amazoncognito.com
+REACT_APP_CLIENT_ID=33k0ggv7odoroau0ht7h6e5s70
+REACT_APP_API_KEY=pjrhskWU8M2el8QGKbPJH8VvwUo33a9Z3XGi973I
+REGION=ap-southeast-2
+BRANCH=main
 ```
 
 Optional parameter `<BRANCH>` is a branch in your source code repository that you would like to link to the Amplify application. Default branch is `mainline`
-
-You can construct `<REACT_APP_AUTH_URL>` as `https://<REACT_APP_CLIENT_ID>.auth.<REGION>.amazoncognito.com`
 
 ### CDK Deploy
 
@@ -33,14 +33,14 @@ Please make sure that you are in `amplify-infra` directory under your local repo
 
 ```
 #fhir-works-on-aws-ui/amplify-infra
-yarn run cdk deploy -c fhir_server_url="<REACT_APP_FHIR_SERVER_URL>" -c auth_url="<REACT_APP_AUTH_URL>" -c client_id="<REACT_APP_CLIENT_ID>" -c api_key="<REACT_APP_API_KEY>" [-c amplify_branch="<BRANCH>"]
+yarn run cdk deploy -c fhir_server_url="https://33k0ggv7odoroau0ht7h6e5s70.auth.ap-southeast-2.amazoncognito.com" -c auth_url="https://33k0ggv7odoroau0ht7h6e5s70.auth.ap-southeast-2.amazoncognito.com" -c client_id="33k0ggv7odoroau0ht7h6e5s70" -c api_key="pjrhskWU8M2el8QGKbPJH8VvwUo33a9Z3XGi973I" -c amplify_branch=main
 ```
 
 After deployment finishes, please save `<AMPLIFY_DOMAIN>` and `<REPO_NAME>` values from CDK app deployment:
 
 ```
-AmplifyInfraStack.AmplifyDomain = <AMPLIFY_DOMAIN>
-AmplifyInfraStack.CodeCommitRepo = <REPO_NAME>
+AmplifyInfraStack.AmplifyDomain = main.dpvipv6vavl85.amplifyapp.com
+AmplifyInfraStack.CodeCommitRepo = fhir-works-on-aws-ui
 ```
 
 ### Update Cognito User Pool Client

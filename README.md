@@ -33,17 +33,17 @@ ServiceEndpoint: <REACT_APP_FHIR_SERVER_URL>
 3. Create a file in the root directory of this project named `.env.local`. The file should be on the path `fhir-works-frontend/.env.local`. You should store the FHIR Server credentials in the file as shown below. Remember to replace the variable values with the actual value from the step above.
 
 ```
-REACT_APP_FHIR_SERVER_URL=<REACT_APP_FHIR_SERVER_URL>
-REACT_APP_AUTH_URL=https://<REACT_APP_CLIENT_ID>.auth.<REGION>.amazoncognito.com
-REACT_APP_CLIENT_ID=<REACT_APP_CLIENT_ID>
-REACT_APP_API_KEY=<REACT_APP_API_KEY>
+REACT_APP_FHIR_SERVER_URL=https://h9azbbark2.execute-api.ap-southeast-2.amazonaws.com/dev
+REACT_APP_AUTH_URL=https://33k0ggv7odoroau0ht7h6e5s70.auth.ap-southeast-2.amazoncognito.com
+REACT_APP_CLIENT_ID=33k0ggv7odoroau0ht7h6e5s70
+REACT_APP_API_KEY=pjrhskWU8M2el8QGKbPJH8VvwUo33a9Z3XGi973I
 ```
 
 4. You are now ready to spin up your FHIR UI. If you don't already have `yarn`, please follow the instructions [here](https://classic.yarnpkg.com/en/docs/install/) to install it. After installing yarn, run the commands below to spin up the FHIR UI.
 
 ```
-yarn install
-yarn start
+npm install
+npm start
 ```
 
 5. Once `yarn start` has completed, go to `localhost:3000` on your browser to see the website. The first thing you want to do is to `login` to the FHIR server on the home page. Click login and follow the instructions. By default the FHIR Server sets up the following username/password.
