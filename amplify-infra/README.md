@@ -17,10 +17,10 @@ This will create an Amplify application for you which will allow AWS Amplify to 
 Before proceeding, please get necessary parameters as outlined in [README](../README.md):
 
 ```
-REACT_APP_FHIR_SERVER_URL=https://h9azbbark2.execute-api.ap-southeast-2.amazonaws.com/dev
-REACT_APP_AUTH_URL=https://33k0ggv7odoroau0ht7h6e5s70.auth.ap-southeast-2.amazoncognito.com
-REACT_APP_CLIENT_ID=33k0ggv7odoroau0ht7h6e5s70
-REACT_APP_API_KEY=pjrhskWU8M2el8QGKbPJH8VvwUo33a9Z3XGi973I
+REACT_APP_FHIR_SERVER_URL=https://tcpj3i2zee.execute-api.ap-southeast-2.amazonaws.com/prod
+REACT_APP_AUTH_URL=https://2rpcql93vuu445tbb8jc5m7sof.auth.ap-southeast-2.amazoncognito.com
+REACT_APP_CLIENT_ID=2rpcql93vuu445tbb8jc5m7sof
+REACT_APP_API_KEY=a6apdwHc5SgtSbfn0EZJ89pQcWuRd1k2YkNeAkk6
 REGION=ap-southeast-2
 BRANCH=main
 ```

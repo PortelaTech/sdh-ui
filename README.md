@@ -63,3 +63,8 @@ password: Master123!
 
 - If you're running the FHIR UI on your local machine, the access token that is being passed from Cognito to the FHIR UI is over `http`. This is not a secure connection. With that in mind, don't store any private information on the FHIR Server. The FHIR Server should be a test server with only fake data.
 - To enable secure connection to the FHIR Server from the FHIR UI, you will need to set up a secure domain with a SSL Certificate for the FHIR UI. Note, a secure domain will have the `https` prefix. After setting up the secure domain for the FHIR UI, remember to add the FHIR UI's web address to the list of allowed `Redirect URLs` in `Cognito`.
+
+
+## ALSO
+
+Set call back URL to amplify URL in [Cognito User Ppol App Client Settings](https://ap-southeast-2.console.aws.amazon.com/cognito/users/?region=ap-southeast-2#/pool/ap-southeast-2_WLeCrrEb7/app-integration-app-settings?_k=jcdauq)
