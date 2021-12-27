@@ -33,7 +33,12 @@ Please make sure that you are in `amplify-infra` directory under your local repo
 
 ```
 #fhir-works-on-aws-ui/amplify-infra
-yarn run cdk deploy -c fhir_server_url="https://33k0ggv7odoroau0ht7h6e5s70.auth.ap-southeast-2.amazoncognito.com" -c auth_url="https://33k0ggv7odoroau0ht7h6e5s70.auth.ap-southeast-2.amazoncognito.com" -c client_id="33k0ggv7odoroau0ht7h6e5s70" -c api_key="pjrhskWU8M2el8QGKbPJH8VvwUo33a9Z3XGi973I" -c amplify_branch=main
+yarn run cdk deploy \
+-c fhir_server_url="https://tcpj3i2zee.execute-api.ap-southeast-2.amazonaws.com/prod" \
+-c api_key="a6apdwHc5SgtSbfn0EZJ89pQcWuRd1k2YkNeAkk6" \
+-c auth_url="https://2rpcql93vuu445tbb8jc5m7sof.auth.ap-southeast-2.amazoncognito.com" \
+-c client_id="2rpcql93vuu445tbb8jc5m7sof" \
+-c amplify_branch=main
 ```
 
 After deployment finishes, please save `<AMPLIFY_DOMAIN>` and `<REPO_NAME>` values from CDK app deployment:
