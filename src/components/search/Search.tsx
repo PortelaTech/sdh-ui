@@ -30,7 +30,7 @@ export const Search: React.FC<{
 }> = ({ fhirBackend }) => {
   // SearchResults page uses AWS Tables. AWS Tables requires a static number of table items. Therefore let's pull
   // the maximum number of results that are supported
-  const itemsPerPage = 10000;
+  const itemsPerPage = 25; // gavin - this was 10000
   const [resourceType, setResourceType] = React.useState("");
   const [isResourceTypeValid, setIsResourceTypeValid] = React.useState(false);
   const [maxSearchParamLimit, setMaxSearchParamLimit] = React.useState(0);
