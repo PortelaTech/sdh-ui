@@ -2,8 +2,8 @@
 export STAGE=${STAGE:-prod}
 export AWS_REGION=${AWS_REGION:-ap-southeast-2}
 TMPFILE=../sdh-data/fhir-works-on-aws-deployment/service-info.prod.txt
-ServiceEndpoint=$(awk '/^ServiceEndpoint/{print $2}' ${TMPFILE})
-UserPoolAppClientId=$(awk '/^UserPoolAppClientId/{print $2}' ${TMPFILE})
+ServiceEndpoint=X # $(awk '/^ServiceEndpoint/{print $2}' ${TMPFILE})
+UserPoolAppClientId=X #$(awk '/^UserPoolAppClientId/{print $2}' ${TMPFILE})
 ApiKey="a6apdwHc5SgtSbfn0EZJ89pQcWuRd1k2YkNeAkk6"
 
 REACT_APP_API_KEY=${ApiKey}
@@ -17,8 +17,6 @@ REACT_APP_AUTH_URL=${REACT_APP_AUTH_URL}
 REACT_APP_CLIENT_ID=${REACT_APP_CLIENT_ID}
 REACT_APP_FHIR_SERVER_URL=${REACT_APP_FHIR_SERVER_URL}
 EOF
-
-exit
 
 cd amplify-infra
 yarn run cdk deploy \

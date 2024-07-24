@@ -1,5 +1,29 @@
 # Smart Digital Health UI
 
+
+ 6793  brew install cdk
+ 6794  cdk
+ 6795  rehash
+ 6796  cdk
+ 6797  npm install -g aws-cdk  
+ 6798  cdk
+ 6799  ./script/deploy-amplify.sh
+ 6800  yarn install
+ 6801  nvm install 14
+ 6802  brew install nvm
+ 6803  nvm install 14
+ 6804  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+ 6805  nvm install 14
+ 6806  nvm use system
+ 6807  . ~/.zshrc
+ 6808  nvm
+ 6809  nvm install 14
+ 6810  nvm use 14
+ 6811  brew install pyenv
+ 6812  pyenv install 3.10.0
+ 6813* cfn-deploy.sh --stage test ./cfn/online
+ 6814  nvm install 14
+ 
 Based on [AWS FHIR Works On AWS UI](https://github.com/awslabs/fhir-works-on-aws-ui)
 
 This code base allows you to spin up a UI that makes it easy and simple to interface with the [FHIR Works on AWS Server](https://github.com/awslabs/fhir-works-on-aws-deployment).
